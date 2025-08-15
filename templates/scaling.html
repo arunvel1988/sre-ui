@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SRE Scaling</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #e3f2fd);
+      padding: 50px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ef6c00;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #546e7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #37474f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Scaling in SRE</h1>
+    <p>Scaling ensures that systems can handle increased load, traffic, and data while maintaining performance and reliability.</p>
+
+    <h2>Why Scaling Matters</h2>
+    <ul>
+      <li>Supports business growth without degrading user experience.</li>
+      <li>Prepares infrastructure for predictable and unpredictable demand spikes.</li>
+      <li>Optimizes resource usage to balance cost and performance.</li>
+    </ul>
+
+    <h2>Types of Scaling</h2>
+    <ul>
+      <li>🔼 <strong>Vertical Scaling</strong> – Adding more power (CPU, RAM) to existing machines.</li>
+      <li>🔄 <strong>Horizontal Scaling</strong> – Adding more machines or instances to distribute load.</li>
+      <li>🌐 <strong>Geographical Scaling</strong> – Deploying across multiple regions for performance and redundancy.</li>
+    </ul>
+
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Use auto-scaling groups to adjust capacity based on demand.</li>
+      <li>Test scaling strategies under load before production rollout.</li>
+      <li>Implement caching to reduce load on core systems.</li>
+      <li>Ensure monitoring and alerting scale alongside infrastructure.</li>
+    </ul>
+
+    <h2>Scaling Tools & Technologies</h2>
+    <ul>
+      <li>Kubernetes Horizontal Pod Autoscaler.</li>
+      <li>AWS Auto Scaling / Azure VM Scale Sets / GCP Instance Groups.</li>
+      <li>CDNs for content scaling.</li>
+    </ul>
+
+    <a class="btn-back" href="/sre">⬅ Back to SRE Overview</a>
+    <a class="btn-back" href="/">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
+

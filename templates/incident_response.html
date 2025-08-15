@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SRE Incident Response</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #e3f2fd);
+      padding: 50px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ef6c00;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #546e7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #37474f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Incident Response</h1>
+    <p>Incident response is a crucial SRE discipline focused on quickly restoring service during outages while minimizing customer impact.</p>
+
+    <h2>Incident Response Lifecycle</h2>
+    <ul>
+      <li><strong>Detection</strong> – Identify service degradation or outages through monitoring, alerts, or customer reports.</li>
+      <li><strong>Diagnosis</strong> – Quickly assess the scope, cause, and severity of the incident.</li>
+      <li><strong>Mitigation</strong> – Apply temporary fixes to restore service while investigating permanent solutions.</li>
+      <li><strong>Resolution</strong> – Implement the final fix to remove the root cause.</li>
+      <li><strong>Postmortem</strong> – Review what happened, document learnings, and prevent recurrence.</li>
+    </ul>
+
+    <h2>Key Best Practices</h2>
+    <ul>
+      <li>Establish clear incident severity levels (SEV-1, SEV-2, etc.).</li>
+      <li>Assign clear roles (Incident Commander, Communications Lead, etc.).</li>
+      <li>Communicate frequently and transparently with stakeholders.</li>
+      <li>Practice blameless postmortems to encourage learning.</li>
+    </ul>
+
+    <h2>Useful Tools</h2>
+    <ul>
+      <li>PagerDuty, Opsgenie – On-call alerting & escalation.</li>
+      <li>Statuspage – Public communication of outages.</li>
+      <li>Slack, Microsoft Teams – Incident coordination channels.</li>
+    </ul>
+
+    <a class="btn-back" href="/sre">⬅ Back to SRE Overview</a>
+    <a class="btn-back" href="/">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SRE Demo App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f1f8e9, #e3f2fd);
+      padding: 50px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #1565c0;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 1.05rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #546e7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #37474f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚙️ SRE Demo App</h1>
+    <p>This is a dummy application page for learning <strong>Site Reliability Engineering</strong> concepts.</p>
+
+    <h2>📡 Availability</h2>
+    <p>Availability measures the percentage of time a system is operational and accessible. Commonly expressed in "nines" (e.g., 99.9% uptime).</p>
+
+    <h2>🎯 Service Level Objectives (SLOs)</h2>
+    <p>An SLO is a target level of reliability for a service, agreed upon by stakeholders. Example: 99.9% uptime per month.</p>
+
+    <h2>💰 Error Budget</h2>
+    <p>The error budget is the amount of downtime or failures allowed before breaching the SLO. Example: For 99.9% uptime, the monthly error budget is ~43 minutes.</p>
+
+    <h2>🔥 Burn Rate</h2>
+    <p>Burn rate measures how quickly the error budget is being consumed. A high burn rate means issues are happening too often or for too long.</p>
+
+    <h2>📊 Key Practices</h2>
+    <ul>
+      <li>Set realistic SLOs based on business needs.</li>
+      <li>Monitor burn rate to anticipate SLO breaches.</li>
+      <li>Balance reliability and development velocity using error budgets.</li>
+      <li>Automate alerting and response to stay within SLO limits.</li>
+    </ul>
+
+    
+    
+    <a class="btn-back" href="/">⬅ Back to Home</a>
+    <a class="btn-back" href="/sre">⬅ Back to SRE Overview</a>
+    <a class="btn-back" href="/sre/app/deploy"> Deploy App </a>
+  </div>
+</body>
+</html>
+

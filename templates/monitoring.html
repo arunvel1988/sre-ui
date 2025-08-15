@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SRE Monitoring & Observability</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+      padding: 50px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-back {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #546e7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #37474f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Monitoring & Observability</h1>
+    <p>Monitoring is a key part of Site Reliability Engineering. It allows teams to proactively detect, diagnose, and resolve issues before they impact customers.</p>
+
+    <h2>Core Concepts</h2>
+    <ul>
+      <li><strong>SLIs (Service Level Indicators)</strong> – Metrics that define service health (latency, error rate, throughput).</li>
+      <li><strong>SLOs (Service Level Objectives)</strong> – Target values for SLIs that guide operational goals.</li>
+      <li><strong>Error Budgets</strong> – The permissible downtime or errors before corrective action is required.</li>
+    </ul>
+
+    <h2>Popular Tools</h2>
+    <ul>
+      <li>Prometheus – Time-series metrics storage and alerting.</li>
+      <li>Grafana – Data visualization and dashboards.</li>
+      <li>ELK Stack (Elasticsearch, Logstash, Kibana) – Centralized log aggregation and search.</li>
+      <li>OpenTelemetry – Standardized observability framework.</li>
+    </ul>
+
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Alert on symptoms, not just causes.</li>
+      <li>Set actionable and measurable alerts.</li>
+      <li>Use dashboards for quick diagnosis.</li>
+      <li>Continuously review and refine SLOs.</li>
+    </ul>
+
+    <a class="btn-back" href="/sre">⬅ Back to SRE Overview</a>
+    <a class="btn-back" href="/">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
+

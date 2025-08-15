@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SLO Laboratory Deployment Steps</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f1f8e9, #e3f2fd);
+      padding: 50px;
+      text-align: center;
+    }
+    h1 {
+      color: #2e7d32;
+    }
+    form {
+      display: inline-block;
+      margin: 10px;
+    }
+    button {
+      background: linear-gradient(to right, #66bb6a, #2e7d32);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(to right, #2e7d32, #1b5e20);
+    }
+  </style>
+</head>
+<body>
+  <h1>⚙️ Deploy SLO Laboratory - Step by Step</h1>
+  <p>Click each button in order to deploy services.</p>
+
+  <form method="POST"><input type="hidden" name="action" value="clone"><button>📥 Git Clone Repository</button></form>
+  <form method="POST"><input type="hidden" name="action" value="prometheus"><button>🚀 Start Prometheus</button></form>
+  <form method="POST"><input type="hidden" name="action" value="grafana"><button>🚀 Start Grafana</button></form>
+  <form method="POST"><input type="hidden" name="action" value="pyrra-api"><button>🚀 Start Pyrra API</button></form>
+  <form method="POST"><input type="hidden" name="action" value="pyrra-filesystem"><button>🚀 Start Pyrra Filesystem</button></form>
+  <form method="POST"><input type="hidden" name="action" value="rest-api"><button>🚀 Start REST API</button></form>
+  <form method="POST"><input type="hidden" name="action" value="k6"><button>🧪 Run Load Tests (k6)</button></form>
+</body>
+</html>
+
