@@ -30,6 +30,36 @@
     button:hover {
       background: linear-gradient(to right, #2e7d32, #1b5e20);
     }
+    .links {
+      margin-top: 40px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #42a5f5, #1565c0);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .links a:hover {
+      background: linear-gradient(to right, #1565c0, #0d47a1);
+      transform: scale(1.05);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #607d8b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .back-btn:hover {
+      background: #455a64;
+    }
   </style>
 </head>
 <body>
@@ -43,6 +73,19 @@
   <form method="POST"><input type="hidden" name="action" value="pyrra-filesystem"><button>🚀 Start Pyrra Filesystem</button></form>
   <form method="POST"><input type="hidden" name="action" value="rest-api"><button>🚀 Start REST API</button></form>
   <form method="POST"><input type="hidden" name="action" value="k6"><button>🧪 Run Load Tests (k6)</button></form>
+
+  <div class="links">
+    <h3>🌐 Service URLs</h3>
+    <a href="http://localhost:3000" target="_blank">📊 Grafana</a>
+    <a href="http://localhost:9090" target="_blank">📈 Prometheus</a>
+    <a href="http://localhost:9099" target="_blank">📏 Pyrra</a>
+    <a href="http://localhost:8080" target="_blank">🔌 REST API</a>
+    <a href="http://localhost:8080/swagger-ui.html" target="_blank">📄 Swagger UI</a>
+    <a href="http://localhost:3000/d/e515d16f-4025-4bb2-bcdb-7d4d5978d92b/rest-api-monitoring" target="_blank">📊 REST API Dashboard</a>
+  </div>
+
+  <a href="/" class="back-btn">⬅ Back to Home</a>
+  <a href="/sre/deploy/app" class="back-btn">Back</a>
 </body>
 </html>
 
